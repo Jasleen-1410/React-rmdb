@@ -1,0 +1,27 @@
+import styled from 'styled-components';
+
+export const Image = styled.img`
+  width: 100%;
+  max-width: 720px;
+  transition: all 0.3s;
+  object-fit: cover;
+  border-radius: 20px;
+  animation: animateThumb 1s;
+
+  // :hover {
+  //   opacity: 0.8;
+  // }
+
+
+
+  @keyframes animateThumb {
+    from {
+      bottom: -50px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0px;
+      opacity: 1;
+    }
+  }
+`;
